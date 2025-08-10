@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     event.preventDefault();
     const usernameInput = username.length.value.trim();
     const emailInput = email.length.value.trim();
-    const passwordInput = password.value.trim();
+    const passwordInput = password.length.value.trim();
     let isValid = true;
     let messages = [];
 
