@@ -10,20 +10,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   Form.addEventListener("submit", function (event) {
     event.preventDefault();
-    const userNameInput = userName.value.trim();
+    const usernameInput = userName.value.trim();
     const emailInput = email.value.trim();
     const passwordInput = password.value.trim();
     let isValid = true;
     let messages = [];
 
-    if (userNameInput.length < 3) {
+    if (usernameInput.length < 3) {
       isValid = false;
       messages.push("Username should be at least 3 characters long");
-      if (userNameError)
-        userNameError.textContent =
+      if (usernameError)
+        usernameError.textContent =
           "Username should be at least 3 characters long";
     } else {
-      if (userNameError) userNameError.textContent = "";
+      if (usernameError) usernameError.textContent = "";
     }
 
     if (email.includes("!/^[w-]+(.[w-]+)*@([w-]+.)+[a-zA-Z]{2,7}$/")) {
