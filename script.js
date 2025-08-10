@@ -44,19 +44,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
     } else {
       if (passwordError) passwordError.textContent = "";
     }
+    feedbackDiv.style.display = "block";
 
     if (isValid) {
-      if (feedbackDiv) {
-        feedbackDiv.textContent = "Registration successful!";
-        feedbackDiv.style.color = "#28a745";
-      }
+      feedbackDiv.textContent = "Registration successful!";
+      feedbackDiv.style.color = "#28a745";
     } else {
-      feedbackDiv.innerText;
-      if (feedbackDiv) {
-        feedbackDiv.textContent = messages.join("<br>, ");
-        feedbackDiv.innerText;
-        feedbackDiv.style.color = "#dc3545";
-      }
+      feedbackDiv.innerHTML = messages.join("<br>");
+      feedbackDiv.style.color = "#dc3545";
     }
   });
 });
