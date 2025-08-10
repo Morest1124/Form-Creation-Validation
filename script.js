@@ -53,7 +53,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     } else {
       feedbackDiv.innerText;
       if (feedbackDiv) {
-        feedbackDiv.textContent = messages.join(", ");
+        feedbackDiv.textContent = messages.join("<br>, ");
+        feedbackDiv.innerText;
         feedbackDiv.style.color = "#dc3545";
       }
     }
