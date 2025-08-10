@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   Form.addEventListener("submit", function (event) {
     event.preventDefault();
-    const usernameInput = userName.value.trim();
+    const usernameInput = username.length.value.trim();
     const emailInput = email.value.trim();
     const passwordInput = password.value.trim();
     let isValid = true;
